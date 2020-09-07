@@ -1,0 +1,158 @@
+﻿<Window x:Class="Account.CorrectData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Account"
+        mc:Ignorable="d"
+        Height="620"
+        Width="460"
+        Background="#FF222121"
+        >
+    <Grid>
+        <TextBox x:Name="City" 
+            HorizontalAlignment="Left"
+            Height="55" Margin="108,73,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            FontFamily="Candara"
+            Width="263"
+            BorderThickness="3"
+            Foreground="#FFDADADA"
+            VerticalContentAlignment="Center" 
+            Background="#FF222121"
+            BorderBrush="#FFC73D3D" 
+            FontSize="25"
+            >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Image Margin="42,73,360.6,462.4" Source="city.ico" Stretch="Fill" RenderTransformOrigin="1.011,0.957"/>
+        <Label Content="Choose city"
+               HorizontalAlignment="Left"
+               Margin="108,24,0,0"
+               VerticalAlignment="Top"
+               Width="140"
+               FontFamily="Candara"
+               Height="44"
+               FontSize="23" Foreground="#FFDADADA"/>
+        <TextBox x:Name="Age" 
+            HorizontalAlignment="Left"
+            Height="55" Margin="108,187,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            FontFamily="Candara"
+            Width="263"
+            BorderThickness="3"
+            Foreground="#FFDADADA"
+            VerticalContentAlignment="Center" 
+            Background="#FF222121"
+            BorderBrush="#FFC73D3D" 
+            FontSize="25"
+            >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Image Margin="42,187,360.6,348.4" Source="age.ico" Stretch="Fill" RenderTransformOrigin="3.223,2.591">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Age"
+            HorizontalAlignment="Left"
+            Margin="108,138,0,0"
+            VerticalAlignment="Top"
+            Width="140"
+            FontFamily="Candara"
+            Height="44"
+            FontSize="23" Foreground="#FFDADADA"/>
+        <TextBox x:Name="Sex" 
+            HorizontalAlignment="Left"
+            Height="55" Margin="108,296,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            FontFamily="Candara"
+            Width="263"
+            BorderThickness="3"
+            Foreground="#FFDADADA"
+            VerticalContentAlignment="Center" 
+            Background="#FF222121"
+            BorderBrush="#FFC73D3D" 
+            FontSize="25"
+            >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Sex"
+            HorizontalAlignment="Left"
+            Margin="108,252,0,0"
+            VerticalAlignment="Top"
+            Width="140"
+            FontFamily="Candara"
+            Height="44"
+            FontSize="23" Foreground="#FFDADADA"/>
+        <Image Margin="42,296,360.6,239.4" Source="sex.ico" Stretch="Fill"/>
+        <TextBox x:Name="Salary" 
+            HorizontalAlignment="Left"
+            Height="55" Margin="108,405,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            FontFamily="Candara"
+            Width="263"
+            BorderThickness="3"
+            Foreground="#FFDADADA"
+            VerticalContentAlignment="Center" 
+            Background="#FF222121"
+            BorderBrush="#FFC73D3D" 
+            FontSize="25"
+            >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Image Margin="42,405,360.6,130.4" Source="cash.ico" Stretch="Fill" RenderTransformOrigin="1.372,1.258"/>
+        <Label Content="Salary"
+            HorizontalAlignment="Left"
+            Margin="108,356,0,0"
+            VerticalAlignment="Top"
+            Width="140"
+            FontFamily="Candara"
+            Height="44"
+            FontSize="23" Foreground="#FFDADADA"/>
+        <Button
+            x:Name="Save"
+            Content="Save"
+            HorizontalAlignment="Left"
+            Margin="251,491,0,0"
+            VerticalAlignment="Top"
+            Width="120" Height="53"
+            BorderBrush="#FF1BFF16"
+            BorderThickness="3"
+            FontSize="24"
+            Foreground="#FFDADADA"
+            Background="#FF222121"
+            Cursor="Hand" 
+            RenderTransformOrigin="0.873,0.426" Click="Save_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

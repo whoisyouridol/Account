@@ -1,0 +1,101 @@
+﻿<Window x:Class="Account.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Account"
+        mc:Ignorable="d" Height="450" Width="800">
+    <Grid Background="#FF222121">
+        <TextBox x:Name="Login"
+            x:FieldModifier= "public"
+            HorizontalAlignment="Left"
+            Height="49" 
+            Margin="282,74,0,0"
+            TextWrapping="Wrap"
+            Text="login"
+            Width="270"
+            Background="#FF222121"
+            FontSize="25"
+            FontFamily="Candara"
+            Foreground="#FFDADADA"
+            BorderThickness="3"
+            VerticalAlignment="Top"
+            VerticalContentAlignment="Center"
+            BorderBrush="#FFC73D3D"
+            SelectionBrush="#FF898989"
+            Padding="10,0,0,0"
+            PreviewMouseLeftButtonDown="Login_PreviewMouseLeftButtonDown">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <PasswordBox
+            x:Name="Password" 
+            x:FieldModifier="public"
+            HorizontalAlignment="Left"
+            Height="49" Margin="282,157,0,0"
+            Password="password"
+            Width="270"
+            Background="#FF222121"
+            FontSize="15"
+            BorderThickness="3"
+            FontFamily="Malgun Gothic"
+            Foreground="#FFDADADA"
+            VerticalAlignment="Top"
+            VerticalContentAlignment="Center"
+            BorderBrush="#FFC73D3D"
+            SelectionBrush="#FF898989"
+            Padding="10,0,0,0"
+            PreviewMouseLeftButtonDown="Password_PreviewMouseLeftButtonDown"
+            >
+            <PasswordBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </PasswordBox.Resources>
+        </PasswordBox>
+        <Image Margin="232,163,520.6,214" Source="password.ico" Stretch="Fill"/>
+        <Image Margin="232,74,517.6,304" Source="login.ico" Stretch="Fill"/>
+        <Button
+                x:Name="Sign_up_Button"
+                Content="Sign up"
+                HorizontalAlignment="Left"
+                Margin="282,238,0,0"
+                VerticalAlignment="Top"
+                Width="120" Height="47"
+                BorderBrush="#FF1BFF16"
+                BorderThickness="3"
+                FontSize="24"
+                Foreground="#FFDADADA"
+                Background="#FF222121"
+                Cursor="Hand" Click="Sign_up_Button_Click" RenderTransformOrigin="0.873,0.426"
+                >
+            <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Sign_in_Button"
+            Content="Sign in"
+            HorizontalAlignment="Left"
+            Margin="432,238,0,0"
+            VerticalAlignment="Top"
+            Width="120" Height="47"
+            BorderBrush="#FFC73D3D"
+            BorderThickness="3"
+            FontSize="24"
+            Foreground="#FFDADADA"
+            Background="#FF212122"
+            Cursor="Hand" Click="Sign_in_Button_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

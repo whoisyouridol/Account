@@ -1,0 +1,43 @@
+﻿<Window x:Class="Account.IncorrectData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Account"
+        mc:Ignorable="d"
+        Height="300"
+        Width="520"
+        Background="#FF222121"
+        >
+    <Grid>
+        <Label x:Name="Again" Content="Incorrect login or password! Please, try again"
+               HorizontalAlignment="Left"
+               Margin="20,29,0,0"
+               VerticalAlignment="Top"
+               Height="50"
+               Width="467"
+               FontFamily="Candara"
+               Foreground="#FFDADADA"
+               FontSize="24"/>
+        <Button x:Name="Go_To_Main"
+            Content="Ok"
+            HorizontalAlignment="Left"
+            Margin="186,142,0,0"
+            VerticalAlignment="Top"
+            Width="132" Height="46"
+            BorderBrush="#FFC73D3D"
+            BorderThickness="3"
+            FontSize="20"
+            Foreground="#FFDADADA"
+            Background="#FF212122"
+            Cursor="Hand" Click="Go_To_Main_Click"
+                >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>
